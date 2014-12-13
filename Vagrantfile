@@ -16,9 +16,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, host: 4567, guest: 80
 
   # Synced Folder
-  config.vm.synced_folder "./", "/var/www/",
+    config.vm.synced_folder "./", "/var/www/html",
   owner: "root",
-  group: "www-data"
+  group: "www-data",
+  mount_options: ["dmode=775,fmode=664"]
+  # config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
