@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/mala23/Projects/how-to-wordpress","disabled":false}}}
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/mala23/Projects/how-to-wordpress","disabled":false},"/var/www":{"owner":"root","group":"www-data","guestpath":"/var/www","hostpath":"/Users/mala23/Projects/how-to-wordpress","disabled":false}}}
